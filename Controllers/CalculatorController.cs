@@ -64,7 +64,7 @@ public class CalculatorController : ControllerBase
         }
         return BadRequest("Invalid Input");
     }
-    [HttpGet("sqrt/{firstNumber}/{secondNumber}")]
+    [HttpGet("sqrt/{firstNumber}")]
     public IActionResult Sqrt(string firstNumber)
     {
         if (IsNumeric(firstNumber))
